@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnExtensionTwo"
+            android:entries="@array/extensions"
+            app:layout_constraintStart_toEndOf="@+id/spnExtensionOne" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="@+id/spnExtensionThree"
+            app:layout_constraintBottom_toBottomOf="@+id/spnExtensionThree"/>
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnExtensionThree"
+            android:entries="@array/extensions"
+            app:layout_constraintStart_toStartOf="@+id/guideline5" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/spnExtensionFour"
+            app:layout_constraintBottom_toBottomOf="@+id/spnExtensionFour"/>
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnExtensionFour"
+            android:entries="@array/extensions"
+            app:layout_constraintStart_toEndOf="@+id/spnExtensionThree" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline7"/>
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnExtensionOne"
+            android:entries="@array/extensions"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/spnExtensionTwo"
+            app:layout_constraintTop_toTopOf="@+id/spnExtensionTwo"/>
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnQualityThree"
+            android:entries="@array/qualities"
+            app:layout_constraintTop_toTopOf="@+id/spnQualityFour"
+            app:layout_constraintBottom_toBottomOf="@+id/spnQualityFour"
+            app:layout_constraintStart_toStartOf="@+id/guideline5" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnQualityFour"
+            android:entries="@array/qualities"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2" app:layout_constraintStart_toStartOf="@+id/guideline6"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnQualityTwo"
+            android:entries="@array/qualities"
+            app:layout_constraintTop_toTopOf="@+id/spnQualityThree"
+            app:layout_constraintBottom_toBottomOf="@+id/spnQualityThree"
+            app:layout_constraintStart_toStartOf="@+id/guideline4" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnQualityOne"
+            android:entries="@array/qualities"
+            app:layout_constraintTop_toTopOf="@+id/spnQualityTwo"
+            app:layout_constraintBottom_toBottomOf="@+id/spnQualityTwo"
+            app:layout_constraintStart_toStartOf="@+id/guideline3" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvQualityFour" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/spnQualityFour"
+            app:layout_constraintStart_toStartOf="@+id/guideline6" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvQualityThree" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/spnQualityThree"
+            app:layout_constraintStart_toStartOf="@+id/guideline5" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvQualityTwo" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/spnQualityTwo"
+            app:layout_constraintStart_toStartOf="@+id/guideline4" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/navigation"/>
+    <Button
+            android:text="Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlay" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/navigation" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintVertical_bias="0.739" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0.83"/>
+    <TextView
+            android:text="Chord Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNameOne"
+            app:layout_constraintTop_toTopOf="@+id/tvNameTwo"
+            android:layout_marginBottom="20dp" app:layout_constraintBottom_toTopOf="@+id/spnNameOne"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline3" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Chord Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNameTwo"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/spnNameTwo" app:layout_constraintStart_toStartOf="@+id/guideline4"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Chord Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNameThree"
+            app:layout_constraintTop_toTopOf="@+id/tvNameTwo"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/spnNameThree" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline5" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Chord Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNameFour"
+            app:layout_constraintTop_toTopOf="@+id/tvNameTwo"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline6" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnNameOne"
+            android:entries="@array/names"
+            app:layout_constraintStart_toStartOf="@+id/guideline3" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"/>
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnNameTwo"
+            app:layout_constraintTop_toTopOf="@+id/spnNameThree"
+            app:layout_constraintBottom_toBottomOf="@+id/spnNameThree" app:layout_constraintVertical_bias="0.0"
+            android:entries="@array/names"
+            app:layout_constraintStart_toStartOf="@+id/guideline4" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnNameThree"
+            app:layout_constraintBottom_toBottomOf="@+id/spnNameFour"
+            app:layout_constraintTop_toTopOf="@+id/spnNameFour"
+            android:entries="@array/names"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline5" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <Spinner
+            android:layout_width="90dp"
+            android:layout_height="53dp"
+            android:id="@+id/spnNameFour"
+            android:entries="@array/names"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/guideline6" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <Button
+            android:text="Randomize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRandomize"
+            app:layout_constraintTop_toTopOf="@+id/btnPlay" app:layout_constraintBottom_toBottomOf="@+id/btnPlay"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toStartOf="@+id/btnPlay"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+            android:text="Quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvQualityOne"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/spnQualityOne"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline" app:layout_constraintGuide_begin="208dp"
+                                          android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline2" app:layout_constraintGuide_begin="316dp"
+                                          android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline3" app:layout_constraintGuide_begin="0dp"
+                                          android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline4" app:layout_constraintGuide_begin="100dp"
+                                          android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline5" app:layout_constraintGuide_begin="200dp"
+                                          android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline6" app:layout_constraintGuide_begin="300dp"
+                                          android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline7" app:layout_constraintGuide_begin="411dp"
+                                          android:orientation="horizontal"/>
+    <TextView
+            android:text="Extension: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvExtensionOne"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/spnExtensionOne"/>
+    <TextView
+            android:text="Extension: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvExtensionTwo" app:layout_constraintStart_toStartOf="@+id/guideline4"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/spnExtensionTwo"/>
+    <TextView
+            android:text="Extension: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvExtensionThree" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/spnExtensionThree"
+            app:layout_constraintStart_toStartOf="@+id/guideline5" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Extension: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvExtensionFour" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/spnExtensionFour"
+            app:layout_constraintStart_toStartOf="@+id/guideline6" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+</android.support.constraint.ConstraintLayout>

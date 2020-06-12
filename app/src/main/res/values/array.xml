@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <item>C</item>  //0
+        <item>C#</item> //1
+        <item>Db</item> //2
+        <item>D</item>  //3
+        <item>D#</item> //4
+        <item>Eb</item> //5
+        <item>E</item>  //6
+        <item>F</item>  //7
+        <item>F#</item> //8
+        <item>Gb</item> //9
+        <item>G</item>  //10
+        <item>G#</item> //11
+        <item>Ab</item> //12
+        <item>A</item>  //13
+        <item>Bb</item> //14
+        <item>B</item>  //15
+    </string-array>
+
+    <string-array name="qualities">
+        <item>Major</item>
+        <item>Minor</item>
+    </string-array>
+
+    <string-array name="extensions">
+        <item>None</item>
+        <item>7</item>
+        <item>9</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="instruments">
+        <item>Electric Piano</item>
+        <item>Banjo</item>
+        <item>Vibraphone</item>
+    </string-array>
+</resources>

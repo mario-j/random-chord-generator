@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            android:id="@+id/keyboard_layout"
+                                            android:background="#000000">
+
+    <Button
+            style="@style/firstwhitekey"
+            android:id="@+id/w1"
+            android:layout_marginLeft="15dp"/>
+
+    <Button
+            style="@style/whitekey"
+            android:id="@+id/w2"
+            android:layout_toRightOf="@id/w1"/>
+
+    <Button
+            style="@style/whitekey"
+            android:id="@+id/w3"
+            android:layout_toRightOf="@id/w2"/>
+    <Button
+            style="@style/whitekey"
+            android:id="@+id/w4"
+            android:layout_toRightOf="@id/w3"/>
+
+    <Button
+            style="@style/whitekey"
+            android:id="@+id/w5"
+            android:layout_toRightOf="@id/w4"/>
+
+    <Button
+            style="@style/whitekey"
+            android:id="@+id/w6"
+            android:layout_toRightOf="@id/w5"/>
+
+    <Button
+            style="@style/whitekey"
+            android:id="@+id/w7"
+            android:layout_toRightOf="@id/w6"/>
+
+    <Button
+            style="@style/whitekey"
+            android:id="@+id/w8"
+            android:layout_toRightOf="@id/w7"/>
+
+    <Button
+            style="@style/blackkey"
+            android:id="@+id/b1"
+            android:layout_toRightOf="@id/w1"/>
+
+    <Button
+            style="@style/blackkey"
+            android:id="@+id/b2"
+            android:layout_toRightOf="@id/w2"/>
+
+    <Button
+            style="@style/blackkey"
+            android:id="@+id/b3"
+            android:layout_toRightOf="@id/w4"/>
+
+    <Button
+            style="@style/blackkey"
+            android:id="@+id/b4"
+            android:layout_toRightOf="@id/w5"/>
+
+    <Button
+            style="@style/blackkey"
+            android:id="@+id/b5"
+            android:layout_toRightOf="@id/w6"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instrument: "
+                android:textSize="24dp"/>
+
+        <Spinner
+                android:layout_width="273dp"
+                android:layout_height="52dp" android:id="@+id/spnInstruments"
+                android:entries="@array/instruments"/>
+    </LinearLayout>
+
+</RelativeLayout>
